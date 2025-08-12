@@ -1,0 +1,131 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            padding: 20px;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .form-container {
+            background-color: f3e5f5;
+            padding: 20px;
+            margin: 50px auto;
+            width: 500px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-container button:hover {
+            background-color: #218838;
+        }
+        .radio-group {
+    display: flex;
+    gap: 20px; /* Optional: space between options */
+    align-items: center;
+    
+  }
+  label {
+     display: flex;
+     align-items: center;
+  }
+ .form-field{
+     width: 100%;
+     padding: 8px;
+     
+  }
+    </style>
+</head>
+    <div class="container">
+        <div class="form-container">
+         <h1><Center>Hackathon Registration</h1>
+
+            
+                <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required />
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required />   
+
+                    <label for="college">College Name</label>
+                    <input type="text" id="college" name="college" required />
+                    
+                    <label for="branch">Branch</label>
+                    <input type="text" id="branch" name="branch" required />
+
+
+        <label for="year">Year of Study</label>
+        <select class="form-field" required>
+          <option value="" disabled selected>--Select Year--</option>
+          <option value="1">1st Year</option>
+          <option value="2">2nd Year</option>
+          <option value="3">3rd Year</option>
+          <option value="4">4th Year</option>
+          <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+          <label><input type="radio" name="gender" value="female" required /> Female</label>
+          <label><input type="radio" name="gender" value="other" required /> Other</label>
+        </div><br><br>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required/>
+          <br><br>
+           <label>Languages Known</label>
+        <div class="radio-group">
+          <label><input type="checkbox" name="language" value="c" required /> C</label>
+          <label><input type="checkbox" name="language" value="DS" required /> C++</label>
+          <label><input type="checkbox" name="language" value="python" required /> Python</label>
+          <label><input type="checkbox" name="language" value="java" required /> Java</label>
+        </div><br><br>
+               <label for="Select an event">Select an event</label>
+        <select class="form-field" name="track" required>
+          <option value="" disabled selected>Event</option>
+          <option value="ai">AI/ML</option>
+          <option value="web">Web Development</option>
+          <option value="game">Game Development</option>
+          <option value="iot">IoT</option>
+          <option value="open">Open Innovation</option>
+        </select><br><br>
+                <button type="submit">Register</button>
+            </form>
+           </div>
+    </div>
+</body>
+</html>
